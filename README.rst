@@ -1,4 +1,7 @@
+⚠️ This is a fork of scardine/image_size simply to create a distributable package on PyPI. Will be rendered unnecessary if `image_size/issues/13`__ is addressed.
 
+.. _issue13: https://github.com/scardine/image_size/issues/13
+__ issue13
 
 ================
 get_image_size
@@ -8,6 +11,7 @@ get_image_size
 
 .. image:: https://raw.github.com/scardine/image_size/master/lookmanodeps.png
     :alt: Look, Ma! No deps!
+
 
 Get image width and height given a file path using minimal dependencies
 (no need for PIL, libjpeg, libpng, etc).
