@@ -3,7 +3,7 @@ language: python
 
 install: pip install -e .
 
-script: 'true'  # No tests
+script: python -c 'import get_image_size'
 
 deploy:
   provider: pypi
