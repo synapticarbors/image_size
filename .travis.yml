@@ -1,0 +1,15 @@
+sudo: false
+language: python
+
+install: pip install -e .
+
+script: python -c 'import get_image_size'
+
+deploy:
+  provider: pypi
+  user: $PYPI_USER
+  password: $PYPI_PASSWORD
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: opsdroid/image_size

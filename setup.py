@@ -16,8 +16,8 @@ def read_long_description():
 LONG_DESCRIPTION = read_long_description()
 
 setup(
-    name='get_image_size',
-    url='https://github.com/scardine/image_size',
+    name='opsdroid_get_image_size',
+    url='https://github.com/opsdroid/image_size',
     version=VERSION,
     long_description=LONG_DESCRIPTION,
     author='github.com/scardine',
