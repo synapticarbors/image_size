@@ -1,8 +1,7 @@
 import os
 import codecs
 from setuptools import setup
-
-VERSION = '0.2.0'
+import versioneer
 
 
 def read_long_description():
@@ -19,7 +18,8 @@ LONG_DESCRIPTION = read_long_description()
 setup(
     name='opsdroid_get_image_size',
     url='https://github.com/opsdroid/image_size',
-    version=VERSION,
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     long_description=LONG_DESCRIPTION,
     author='github.com/scardine',
     author_email=' ',
