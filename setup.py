@@ -1,4 +1,4 @@
-
+import os
 import codecs
 from setuptools import setup
 
@@ -9,8 +9,9 @@ def read_long_description():
     long_desc = []
     with codecs.open('README.rst', 'r', 'utf8') as longdesc:
         long_desc.append(longdesc.read())
-    with codecs.open('HISTORY.rst', 'r', 'utf8') as history:
-        long_desc.append(history.read())
+    if os.path.exists("HISTORY.rst"):
+        with codecs.open('HISTORY.rst', 'r', 'utf8') as history:
+            long_desc.append(history.read())
     return u'\n\n'.join(long_desc)
 
 LONG_DESCRIPTION = read_long_description()
