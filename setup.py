@@ -1,6 +1,6 @@
 import os
 import codecs
-from setuptools import setup
+from setuptools import setup, find_packages
 import versioneer
 
 
@@ -24,7 +24,7 @@ setup(
     author='github.com/scardine',
     author_email=' ',
     license='MIT',
-    py_modules=['get_image_size'],
+    packages=find_packages(),
     entry_points={
         'console_scripts': [
             'get-image-size = get_image_size:main',
